@@ -2,7 +2,7 @@
 
 
 body {
-    background-image: url(/img/background-lover.jpg);
+    background-image: url(../img/background-lover.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
