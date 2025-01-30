@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Prioridad</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <main class="index">
+        <section class="intro">
+            <h1>Calculadora de Prioridad de Pedidos</h1>
+            <p>Selecciona el tipo de pedido, país, división, e-retailer y prioridad del requester para calcular la prioridad.</p>
+            <p>Tener en cuenta que todas estas selecciones son obligatorias.</p>
+        </section>
+        <section class="preguntas">
+            <!-- Tipo de Pedido -->
+            <label for="tipoPedido">Tipo de Pedido:</label>
+            <select id="tipoPedido">
+                <option value="" selected disabled>Seleccionar una opción</option>
+                <option value="Correction">Correction</option>
+                <option value="IP Rights/Legal">IP Rights/Legal</option>
+                <option value="HERO PDP Creation">HERO PDP Creation</option>
+                <option value="Eventing (ESIS)">Eventing (ESIS)</option>
+                <option value="ESIS Creation">ESIS Creation</option>
+                <option value="HERO PDP Maintenance">HERO PDP Maintenance</option>
+                <option value="ESIS Maintenance">ESIS Maintenance</option>
+                <option value="Product Maintenance">Product Maintenance</option>
+                <option value="Analytics">Analytics</option>
+                <option value="Question/Consult for validation">Question/Consult for validation</option>
+            </select>
+
+            <!-- País -->
+            <label for="pais">País:</label>
+            <select id="pais">
+                <option value="" selected disabled>Seleccionar una opción</option>
+                <option value="Mexico">México</option>
+                <option value="Brazil">Brazil</option>
+                <option value="CERAN">CERAN</option>
+                <option value="Chile">Chile</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Uruguay">Uruguay</option>
+            </select>
+
+            <!-- División -->
+            <label for="division">División:</label>
+            <select id="division">
+                <option value="" selected disabled>Seleccionar una opción</option>
+                <option value="Luxe">Luxe</option>
+                <option value="CPD">CPD</option>
+                <option value="LDB">LDB</option>
+                <option value="PPD">PPD</option>
+            </select>
+
+            <!-- E-Retailer -->
+            <label for="eRetailer">E-Retailer:</label>
+            <select id="eRetailer">
+                <option value="" selected disabled>Seleccionar una opción</option>
+                <option value="Top 3 e-retailers">Top 3 e-retailers</option>
+                <option value="All other e-retailers">All other e-retailers</option>
+            </select>
+
+            <!-- Prioridad del Requester -->
+            <label for="prioridadRequester">Prioridad del Requester:</label>
+            <select id="prioridadRequester">
+                <option value="" selected disabled>Seleccionar una opción</option>
+                <option value="High/Highest">High/Highest</option>
+                <option value="Medium">Medium</option>
+                <option value="Low/Lowest/unprioritized">Low/Lowest/unprioritized</option>
+            </select>
+        </section>
+        <section class="resultado">
+            <button id="calcular">Calcular Prioridad</button>
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
