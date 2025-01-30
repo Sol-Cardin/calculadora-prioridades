@@ -1,60 +1,6 @@
 # Simulador de Prioridad de Pedidos
 
 ## Descripción
-Este simulador fue diseñado para reflejar un proceso nuevo implementado en mi trabajo como Project Manager, donde calculo el nivel de prioridad de los pedidos enviados por los clientes. Para esta entrega, simplifiqué la lógica a dos variables, aunque mi intención es expandirlo a cinco variables en el futuro.
-
-## Funcionamiento
-El simulador funciona como una calculadora de prioridad basada en dos variables:
-- **Tipo de Pedido**: Determina la naturaleza del trabajo solicitado.
-- **País**: Indica el mercado desde el cual proviene el pedido.
-
-Ambas variables tienen un valor base que se multiplica por el valor de la opción seleccionada para obtener un puntaje final.
-
-## Variables y Opciones
-
-### Tipo de Pedido (valor base: 4)
-Opciones:
-- **Corrección**: 4
-- **Mantenimiento del Hero**: 3
-- **Mantenimiento del Producto**: 2
-- **Pregunta**: 1
-
-### País (valor base: 2)
-Opciones:
-- **México**: 2
-- **Chile**: 1
-- **Argentina**: 0.5
-
-## Fórmula de Cálculo
-La fórmula utilizada para calcular el puntaje es:
-(Tipo de Pedido * Opción de Pedido) + (País * Opción de País)
-
-### Ejemplo
-Si el pedido es de **Mantenimiento del Hero** y proviene de **México**:
-Cálculo: (4 × 3) + (2 × 2) = 12 + 4 = 16
-Resultado: Puntaje 16.
-
-## Clasificación de Resultados
-El sistema clasifica los resultados en tres niveles:
-- **L1 (Critical)**: Puntaje entre 14 y 20.
-- **L2 (Medium)**: Puntaje entre 7 y 13.
-- **L3 (Low)**: Puntaje menor o igual a 6.
-
----
-
-## Cómo Usar
-1. Selecciona el **Tipo de Pedido** y el **País** en el simulador.
-2. El sistema calculará automáticamente el puntaje de prioridad.
-3. Revisa el nivel de prioridad asignado según el puntaje obtenido.
-
----
-
-## Tecnologías Utilizadas
-- HTML, CSS, JavaScript.
-
-
-
-## Descripción
 Este simulador fue diseñado para reflejar un proceso nuevo implementado en mi trabajo como Project Manager, donde calculo el nivel de prioridad de los pedidos enviados por los clientes.
 
 ## Funcionamiento
