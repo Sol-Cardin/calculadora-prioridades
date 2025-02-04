@@ -38,13 +38,26 @@ label {
     font-weight: 600;
 }
 
-select, button {
+select,
+button {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
+}
+
+#eRetailer {
+    margin-bottom: 0px;
+}
+
+.top3 {
+    margin-top: 6px;
+}
+
+.top3 a {
+    color: #ff70f1;
 }
 
 button {
