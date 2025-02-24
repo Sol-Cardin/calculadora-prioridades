@@ -95,13 +95,6 @@ document.getElementById("calcular").addEventListener("click", function () {
     const nivelPrioridad = determinarNivelPrioridad(puntaje);
 
     document.getElementById("resultado").textContent = `El puntaje calculado es: ${puntaje}. Nivel de prioridad: ${nivelPrioridad}`;
-
-    // Guardar selecciones en localStorage
-    //localStorage.setItem("ultimoTipoPedido", tipoPedidoSeleccionado);
-    //localStorage.setItem("ultimoPais", paisSeleccionado);
-    //localStorage.setItem("ultimaDivision", divisionSeleccionada);
-    //localStorage.setItem("ultimoERetailer", eRetailerSeleccionado);
-    //localStorage.setItem("ultimaPrioridadRequester", prioridadRequesterSeleccionada);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -112,16 +105,4 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("eRetailer").value = "";
     document.getElementById("prioridadRequester").value = "";
 
-    //Cargar última selección guardada (si existe)
-    //const ultimoTipoPedido = localStorage.getItem("ultimoTipoPedido");
-    //const ultimoPais = localStorage.getItem("ultimoPais");
-    //const ultimaDivision = localStorage.getItem("ultimaDivision");
-    //const ultimoERetailer = localStorage.getItem("ultimoERetailer");
-    //const ultimaPrioridadRequester = localStorage.getItem("ultimaPrioridadRequester");
-
-    //if (ultimoTipoPedido) document.getElementById("tipoPedido").value = ultimoTipoPedido;
-    //if (ultimoPais) document.getElementById("pais").value = ultimoPais;
-    //if (ultimaDivision) document.getElementById("division").value = ultimaDivision;
-    //if (ultimoERetailer) document.getElementById("eRetailer").value = ultimoERetailer;
-    //if (ultimaPrioridadRequester) document.getElementById("prioridadRequester").value = ultimaPrioridadRequester;
 });
